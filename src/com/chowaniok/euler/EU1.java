@@ -1,5 +1,7 @@
 package com.chowaniok.euler;
 
+import org.apache.commons.lang3.time.StopWatch;
+
 public class EU1 {
 
 	public int solve(int number) {
@@ -12,12 +14,17 @@ public class EU1 {
 		return result;
 	}
 	
+	
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		int result = new EU1().solve(1000);
+		StopWatch stopWatch = new StopWatch();
+		stopWatch.start();
+		int result = new EU1().solve(100);
 		System.out.println(result);
+		System.out.println("time:" + stopWatch.getNanoTime() );
+		
 	}
 
 }
