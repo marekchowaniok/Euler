@@ -2,8 +2,6 @@ package com.chowaniok.euler;
 
 import org.apache.commons.lang3.time.StopWatch;
 
-import cern.jet.math.Functions;
-
 public class EU3 {
 
 	public long solve(long x) {
